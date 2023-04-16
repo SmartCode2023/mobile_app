@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "451721489827",
+    "project_id": "transan-f995d",
+    "storage_bucket": "transan-f995d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451721489827:android:515f8580e886e7a49bbe16",
+        "android_client_info": {
+          "package_name": "com.example.transan_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451721489827-ogm07nfvalf2p15mnav7mkq9iuhh8jie.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.transan_app",
+            "certificate_hash": "f18167b527c76de27cc0b353333255c2ba916224"
+          }
+        },
+        {
+          "client_id": "451721489827-tvolmv77lb5ns9ci22ben6ihu4ep57um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHpMhNYRwU9yXD2405OPzLNU5KmjSIHmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451721489827-tvolmv77lb5ns9ci22ben6ihu4ep57um.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "451721489827-otheegopnd5t4bniuveiveeis1pqvavf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.transanApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
