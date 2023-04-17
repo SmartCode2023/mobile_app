@@ -55,14 +55,14 @@ class _HomeState extends State<Home> {
                     children: [
                      Align(
                        alignment: Alignment.centerLeft,
-                       child:  Text(
+                       /*child:  Text(
                            Strings.homeWelcomeTitle,
                            style: GoogleFonts.poppins(
                            fontSize: 30,
                            color: darkBlue,
                            fontWeight: FontWeight.bold
                        )
-                       ),
+                       ),*/
                      ),
 
                     optionWidget(Strings.myTrip, screenSize.width, AssetImages.miViajeImage,(){
@@ -83,7 +83,7 @@ class _HomeState extends State<Home> {
 
   Widget optionWidget(String title, double screenWidth,String imagePath, VoidCallback onTap){
     return Container(
-      margin: const EdgeInsets.only(top: 30),
+      margin: const EdgeInsets.only(top: 50),
       height: 250,
       width: screenWidth,
       child: InkWell(

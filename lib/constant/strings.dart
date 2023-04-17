@@ -43,6 +43,8 @@ static String myTrip= "Mi Viaje";
 
 static String myHistory= "Historial de viajes";
 
+static String tripStatus= "Estado del viaje";
+
 static String tcTitle= "Términos y condiciones";
 
 static String profileTitle= "Perfil";
@@ -60,5 +62,15 @@ static String rest= "Descanso";
 static String delivered= "Entregado";
 
 static String chooseTripStateTitle= "Indica el estado del viaje";
+
+static String viaticosTitle= "Registra un viático";
+
+static String viaticosName= "Nombre del viático";
+
+static String viaticosDescription= "Descripción";
+
+static String viaticosValue= "Valor del viático";
+
+static String viaticosSave= "Guardar";
 
 }

@@ -27,7 +27,7 @@ class _TripStateState extends State<TripState> {
           Align(
             alignment: Alignment.center,
             child: Text(
-              Strings.settingsTitle,
+              Strings.tripStatus,
               style: GoogleFonts.poppins(
                   fontSize: 30,
                   color: darkBlue,
@@ -79,7 +79,7 @@ class _TripStateState extends State<TripState> {
   Widget stateOptionWidget(String title, double screenWidth,IconData icon, VoidCallback onTap){
     return Container(
         margin: const EdgeInsets.all(15),
-        height: 100,
+        height: 80,
         width: screenWidth,
         decoration: BoxDecoration(
           color: Colors.grey.withOpacity(0.2),

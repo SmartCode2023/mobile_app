@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:transan_app/themes/colors.dart';
 import 'package:transan_app/ui/screens/trip_state_screen.dart';
+import 'package:transan_app/ui/screens/viaticos_screen.dart';
 import '../generic_widgets/NavigationBar/navegation_bar.dart';
 
 
@@ -90,7 +91,7 @@ class _TripHomeControllerState extends State<TripHomeController> {
     }else if(navegationOption==2){
       return Container(color: Colors.blue,);
     }else{
-      return Container(color: Colors.yellowAccent,);
+      return const ViaticosScreen();
     }
   }
 }
