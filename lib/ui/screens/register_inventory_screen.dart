@@ -31,7 +31,9 @@ final GlobalKey<FormState> _formKey = GlobalKey();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: lightGreen,
-        automaticallyImplyLeading: false,
+        iconTheme: IconThemeData(
+          color: Colors.white, // set the color of the arrow to white
+        ),
         title: Text(Strings.tranSan,
         style: TextStyle( color: Colors.black,),
         ),

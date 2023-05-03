@@ -103,7 +103,7 @@ class _InfoTripScreenState extends State<InfoTripScreen> {
             margin: const EdgeInsets.only(
                 top: 10
             ),
-            height: 80,
+            height: 120,
               width: screenSize.width,
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(

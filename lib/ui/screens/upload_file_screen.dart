@@ -68,8 +68,8 @@ class _UploadFileScreenState extends State<UploadFileScreen> {
                   margin: const EdgeInsets.all(10),
                   child:  Text(
                     files.isEmpty
-                        ?  Strings.completeUpload
-                        : Strings.chooseFile,
+                        ?  Strings.chooseFile
+                        : Strings.completeUpload,
                     style: const TextStyle(fontSize: 16, color: Colors.black),
                   ),
                 ),

@@ -79,7 +79,9 @@ class _AgendaState extends State<Agenda>{
     return Scaffold(
       appBar: AppBar(
         backgroundColor: lightGreen,
-        automaticallyImplyLeading: false,
+        iconTheme: IconThemeData(
+          color: Colors.white, // set the color of the arrow to white
+        ),
         title: Text(
           Strings.showSchedule,
           style: TextStyle( color: Colors.black,),

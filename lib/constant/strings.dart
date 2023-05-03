@@ -1,13 +1,13 @@
 class Strings{
 
 
-static String registerText= "Registrarme";
+static String registerText= "Registrar cuenta";
 
 static String loginText= "Iniciar Sesión";
 
 static String logoutText= "Cerrar sesión";
 
-static String signUpText= "Crea tu cuenta";
+static String signUpText= "Crear cuenta";
 
 static String continueText= "Continuar";
 
@@ -75,6 +75,8 @@ static String viaticosValue= "Valor del viático";
 
 static String viaticosSave= "Guardar";
 static String showSchedule= "Tu agenda";
+
+static String addUserTitle= "Agregar cuenta";
 
 static String validateAndRegiter = "Valida y registra inventario";
 

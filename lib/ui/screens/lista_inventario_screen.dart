@@ -82,7 +82,9 @@ class _ListaInventarioScreenState extends State<ListaInventarioScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: lightGreen,
-        automaticallyImplyLeading: false,
+        iconTheme: IconThemeData(
+          color: Colors.white, // set the color of the arrow to white
+        ),
         title: Text(Strings.viewInventory,
         style: TextStyle( color: Colors.black,),
         ),

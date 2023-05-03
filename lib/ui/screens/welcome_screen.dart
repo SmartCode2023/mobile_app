@@ -66,12 +66,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   Expanded(
                     flex: 1,
                     child: Container(
+                      margin: const EdgeInsets.only(
+                        bottom: 20
+                      ),
                       padding: const EdgeInsets.only(
                         left: 10,
                         right: 10
                       ),
                       child:FractionallySizedBox(
-                        heightFactor: 0.7,
+                        heightFactor: 0.8,
                         alignment: Alignment.bottomCenter,
                         child:  ElevatedButton(
                             style: Theme.of(context).elevatedButtonTheme.style?.copyWith(
@@ -89,7 +92,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       )
                     ),
                   ),
-                  Expanded(
+                  /*Expanded(
                     flex: 1,
                     child: Container(
                         padding: const EdgeInsets.only(
@@ -121,7 +124,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           ),
                         )
                     ),
-                  ),
+                  ),*/
                 ],
               ),
             ),

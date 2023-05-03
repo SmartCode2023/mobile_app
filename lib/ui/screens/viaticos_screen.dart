@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:transan_app/ui/screens/upload_file_screen.dart';
 import '../../constant/strings.dart';
 import '../../themes/colors.dart';
 
@@ -13,6 +14,38 @@ class _ViaticosScreen extends State<ViaticosScreen> {
   late String selectedOption = "Peaje";
   final TextEditingController descripcionController = TextEditingController();
   final TextEditingController valorController = TextEditingController();
+  List<Map<String, dynamic>> files=[];
+
+  void addFile() async{
+    await showDialog(
+      barrierDismissible: false,
+      context: context,
+      builder: (BuildContext context){
+        return AlertDialog(
+          insetPadding: const EdgeInsets.all(10),
+          contentPadding: const EdgeInsets.all(0),
+          shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(20.0))
+          ),
+          content: Builder(
+            builder: (context) {
+              return SizedBox(
+                width: 400,
+                height: 200,
+                child: UploadFileScreen(
+                  onFilesUploaded: (List<Map<String, dynamic>> uploadedFiles) {
+                    files= uploadedFiles;
+                    Navigator.pop(context);
+                  },
+                ),
+              );
+            },
+          ),
+        );
+      },
+    );
+  }
+
 
     @override
   void dispose() {
@@ -83,6 +116,45 @@ class _ViaticosScreen extends State<ViaticosScreen> {
               ),
             ),
             SizedBox(height: 16),
+
+            Container(
+                color: Colors.white,
+                width: double.infinity,
+                height: 90,
+                padding: const EdgeInsets.all(20),
+                child: InkWell(
+                  onTap: (){
+                    addFile();
+                  },
+                  child: Row(
+                    children:  [
+                      Expanded(
+                          flex: 4,
+                          child: Align(
+                            alignment: Alignment.centerLeft,
+                            child:Text(
+                                Strings.uploadFilesTitle,
+                                style:  TextStyle(
+                                    fontSize: 18,
+                                    color: Colors.grey[400],
+                                    fontWeight: FontWeight.bold
+                                )
+                            ),
+                          )
+                      ),
+                      const Expanded(
+                        flex: 1,
+                        child: Icon(
+                          Icons.upload,
+                          color: darkBlue,
+                          size: 30,
+                        ),
+                      ),
+                    ],
+                  ),
+                )
+            ),
+
             Center(
               child: ElevatedButton(
                 onPressed: () {
