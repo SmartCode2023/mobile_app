@@ -72,5 +72,18 @@ static String viaticosDescription= "Descripción";
 static String viaticosValue= "Valor del viático";
 
 static String viaticosSave= "Guardar";
+static String showSchedule= "Tu agenda";
+
+static String validateAndRegiter = "Valida y registra inventario";
+
+static String registerTitle = "Valida y registra";
+
+static String envios = "Tus envios";
+
+static String dayButtonSchedule = "Dia";
+
+static String monthButtonSchedule = "Mes";
+
+static String viewInventory = "Vizualiza el inventario";
 
 }
