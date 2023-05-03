@@ -1,7 +1,8 @@
+import 'dart:convert';
+import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import '../../constant/assetImages.dart';
 import '../../constant/strings.dart';
 import '../../themes/colors.dart';
 
@@ -13,6 +14,36 @@ class TripState extends StatefulWidget {
 }
 
 class _TripStateState extends State<TripState> {
+
+  List<dynamic> envios = [];
+  String firstEnvioEstado = '';
+
+  Future<void> _fetchData() async {
+    final jsonData = await rootBundle.loadString('assets/files/data_env.json');
+    setState(() {
+      envios = json.decode(jsonData)['envios'];
+      firstEnvioEstado = envios[0]['estadoDeEnvioId'];
+    });
+  }
+
+  void _changeFirstEnvioEstado(String state) async {
+    setState(() {
+      envios[0]['estadoDeEnvioId'] = state;
+      firstEnvioEstado = envios[0]['estadoDeEnvioId'];
+    });
+
+    final jsonFile = File('assets/files/data_env.json');
+
+    jsonFile.writeAsStringSync(json.encode({'envios': envios}));
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _fetchData();
+  }
+
+
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
@@ -55,19 +86,19 @@ class _TripStateState extends State<TripState> {
           ),
 
           stateOptionWidget(Strings.receivedPackage, screenSize.width,Icons.call_received,(){
-
+            _changeFirstEnvioEstado(Strings.receivedPackage);
           }),
 
           stateOptionWidget(Strings.onTheWay, screenSize.width, Icons.rocket_launch,(){
-
+            _changeFirstEnvioEstado(Strings.onTheWay);
           }),
 
           stateOptionWidget(Strings.rest, screenSize.width,Icons.coffee,(){
-
+            _changeFirstEnvioEstado(Strings.rest);
           }),
 
           stateOptionWidget(Strings.delivered, screenSize.width, Icons.check_box,(){
-
+            _changeFirstEnvioEstado(Strings.delivered);
           }),
         ],
       ),

@@ -3,6 +3,7 @@ import 'package:transan_app/themes/colors.dart';
 import 'package:transan_app/ui/screens/trip_state_screen.dart';
 import 'package:transan_app/ui/screens/viaticos_screen.dart';
 import '../generic_widgets/NavigationBar/navegation_bar.dart';
+import 'info_trip_screen.dart';
 
 
 class TripHomeController extends StatefulWidget {
@@ -65,9 +66,6 @@ class _TripHomeControllerState extends State<TripHomeController> {
                                   onTapThird: (){
                                     setState(() {navegationOption=2;});
                                   },
-                                  onTapFourth: (){
-                                    setState(() {navegationOption=3;});
-                                  },
                                   selectedOption: navegationOption,
                                 ),
                               ),
@@ -87,9 +85,7 @@ class _TripHomeControllerState extends State<TripHomeController> {
     if(navegationOption==0){
       return const TripState();
     }else if(navegationOption==1){
-      return Container(color: Colors.red,);
-    }else if(navegationOption==2){
-      return Container(color: Colors.blue,);
+      return const InfoTripScreen();
     }else{
       return const ViaticosScreen();
     }

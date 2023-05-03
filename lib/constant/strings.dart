@@ -45,6 +45,8 @@ static String myHistory= "Historial de viajes";
 
 static String tripStatus= "Estado del viaje";
 
+static String infoTripTitle= "Viaje";
+
 static String tcTitle= "Términos y condiciones";
 
 static String profileTitle= "Perfil";
@@ -72,5 +74,25 @@ static String viaticosDescription= "Descripción";
 static String viaticosValue= "Valor del viático";
 
 static String viaticosSave= "Guardar";
+
+static String tripIdTitle= "Id del viaje";
+
+static String tripTypeTitle= "Tipo de viaje";
+
+static String outDateTitle= "Fecha de salida";
+
+static String endDateTitle= "Fecha de entrega";
+
+static String startAddress= "Origen";
+
+static String endAddress= "Destino";
+
+static String otherInfoTitle= "Más información del viaje";
+
+static String kmRecorridos= "Kilómetros recorridos";
+
+static String kmFaltantes= "Kilómetros faltantes";
+
+static String tripState= "Estado del viaje";
 
 }

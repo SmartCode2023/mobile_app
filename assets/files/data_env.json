@@ -1,0 +1,141 @@
+{
+  "envios": [
+    {
+      "id": 124529452,
+      "contratoId": 1,
+      "direccionOrigenId": "Carrera 20 # 36-62, Barrio San Benito, Bogotá, Colombia",
+      "direccionDestinoId": "Calle 17 # 4-67, Barrio Centro, Medellín, Colombia",
+      "vehiculoId": 1,
+      "conductorId": 1,
+      "marcaDeTiempoInicio": "2023-04-05T09:00:00Z",
+      "marcaDeTiempoFin": "NA",
+      "estadoDeEnvioId": "En camino",
+      "tiposEnviosId": 1,
+      "km_recoridos": 5
+    },
+
+    {
+      "id": 124529452,
+      "contratoId": 1,
+      "direccionOrigenId": "Carrera 42 # 36-62, Barrio San Benito, Bogotá, Colombia",
+      "direccionDestinoId": "Calle 17 # 4-67, Barrio Felicidad, Medellín, Colombia",
+      "vehiculoId": 1,
+      "conductorId": 1,
+      "marcaDeTiempoInicio": "2023-03-05T09:00:00Z",
+      "marcaDeTiempoFin": "2023-03-10T09:00:00Z",
+      "estadoDeEnvioId": "En camino",
+      "tiposEnviosId": 1,
+      "km_recoridos": 5
+    },
+
+    {
+      "id": 224245234,
+      "contratoId": 1,
+      "direccionOrigenId": "Calle 12 # 22-32, Barrio San Francisco, Cartagena, Colombia",
+      "direccionDestinoId": "Carrera 25 # 10-10, Barrio La Soledad, Cali, Colombia",
+      "vehiculoId": 2,
+      "conductorId": 2,
+      "marcaDeTiempoInicio": "2023-02-15T13:30:00Z",
+      "marcaDeTiempoFin": "2023-02-23T13:30:00Z",
+      "estadoDeEnvioId": "Entregado",
+      "tiposEnviosId": 2,
+      "km_recoridos": 5
+    },
+    {
+      "id": 3247583545,
+      "contratoId": 1,
+      "direccionOrigenId": "Carrera 5 # 12-40, Barrio El Poblado, Pereira, Colombia",
+      "direccionDestinoId": "Calle 10 # 30-12, Barrio El Bosque, Bucaramanga, Colombia",
+      "vehiculoId": 3,
+      "conductorId": 1,
+      "marcaDeTiempoInicio": "2023-04-20T08:45:00Z",
+      "marcaDeTiempoFin": "2023-04-26T08:45:00Z",
+      "estadoDeEnvioId": "En camino",
+      "tiposEnviosId": 1,
+      "km_recoridos": 5
+    },
+    {
+      "id": 4235274460,
+      "contratoId": 2,
+      "direccionOrigenId": "Calle 20 # 8-15, Barrio El Prado, Santa Marta, Colombia",
+      "direccionDestinoId": "Carrera 7 # 20-30, Barrio La Candelaria, Bogotá, Colombia",
+      "vehiculoId": 4,
+      "conductorId": 2,
+      "marcaDeTiempoInicio": "2023-03-15T14:20:00Z",
+      "marcaDeTiempoFin": "2023-03-20T14:20:00Z",
+      "estadoDeEnvioId": "En camino",
+      "tiposEnviosId": 2,
+      "km_recoridos": 5
+    },
+
+    {
+      "id": 124529452,
+      "contratoId": 1,
+      "direccionOrigenId": "Carrera 20 # 36-62, Barrio San Benito, Bogotá, Colombia",
+      "direccionDestinoId": "Calle 17 # 4-67, Barrio Centro, Medellín, Colombia",
+      "vehiculoId": 1,
+      "conductorId": 1,
+      "marcaDeTiempoInicio": "2023-04-05T09:00:00Z",
+      "marcaDeTiempoFin": "NA",
+      "estadoDeEnvioId": "En camino",
+      "tiposEnviosId": 1,
+      "km_recoridos": 5
+    },
+
+    {
+      "id": 124529452,
+      "contratoId": 1,
+      "direccionOrigenId": "Carrera 42 # 36-62, Barrio San Benito, Bogotá, Colombia",
+      "direccionDestinoId": "Calle 17 # 4-67, Barrio Felicidad, Medellín, Colombia",
+      "vehiculoId": 1,
+      "conductorId": 2,
+      "marcaDeTiempoInicio": "2023-03-05T09:00:00Z",
+      "marcaDeTiempoFin": "2023-03-10T09:00:00Z",
+      "estadoDeEnvioId": "En camino",
+      "tiposEnviosId": 1,
+      "km_recoridos": 5
+    },
+
+    {
+      "id": 224245234,
+      "contratoId": 1,
+      "direccionOrigenId": "Calle 12 # 22-32, Barrio San Francisco, Cartagena, Colombia",
+      "direccionDestinoId": "Carrera 25 # 10-10, Barrio La Soledad, Cali, Colombia",
+      "vehiculoId": 2,
+      "conductorId": 1,
+      "marcaDeTiempoInicio": "2023-02-15T13:30:00Z",
+      "marcaDeTiempoFin": "2023-02-23T13:30:00Z",
+      "estadoDeEnvioId": "Entregado",
+      "tiposEnviosId": 2,
+      "km_recoridos": 5
+    },
+    {
+      "id": 3247583545,
+      "contratoId": 1,
+      "direccionOrigenId": "Carrera 5 # 12-40, Barrio El Poblado, Pereira, Colombia",
+      "direccionDestinoId": "Calle 10 # 30-12, Barrio El Bosque, Bucaramanga, Colombia",
+      "vehiculoId": 3,
+      "conductorId": 2,
+      "marcaDeTiempoInicio": "2023-04-20T08:45:00Z",
+      "marcaDeTiempoFin": "2023-04-26T08:45:00Z",
+      "estadoDeEnvioId": "En camino",
+      "tiposEnviosId": 1,
+      "km_recoridos": 5
+    },
+    {
+      "id": 4235274460,
+      "contratoId": 2,
+      "direccionOrigenId": "Calle 20 # 8-15, Barrio El Prado, Santa Marta, Colombia",
+      "direccionDestinoId": "Carrera 7 # 20-30, Barrio La Candelaria, Bogotá, Colombia",
+      "vehiculoId": 4,
+      "conductorId": 1,
+      "marcaDeTiempoInicio": "2023-03-15T14:20:00Z",
+      "marcaDeTiempoFin": "2023-03-20T14:20:00Z",
+      "estadoDeEnvioId": "En camino",
+      "tiposEnviosId": 2,
+      "km_recoridos": 5
+    }
+
+
+  ]
+}

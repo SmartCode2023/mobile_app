@@ -8,14 +8,12 @@ class NavegationBar extends StatefulWidget {
   VoidCallback onTapFirst;
   VoidCallback onTapSecond;
   VoidCallback onTapThird;
-  VoidCallback onTapFourth;
   int selectedOption;
 
   NavegationBar({Key? key,
     required this.onTapFirst,
     required this.onTapSecond,
     required this.onTapThird,
-    required this.onTapFourth,
     required this.selectedOption});
   @override
   _NavegationBarState createState() => _NavegationBarState();
@@ -62,23 +60,13 @@ class _NavegationBarState extends State<NavegationBar> {
                 selectedOption: widget.selectedOption,
               ),
             ),
-            Expanded(
-              flex: 1,
-              child: NavegationBarItem(
-                icon: Icons.map,
-                title: "Mapa",
-                onTap: widget.onTapThird,
-                navegationOption: 2,
-                selectedOption: widget.selectedOption,
-              ),
-            ),
 
             Expanded(
               flex: 1,
               child: NavegationBarItem(
                 icon: Icons.monetization_on,
                 title: "Viáticos",
-                onTap: widget.onTapFourth,
+                onTap: widget.onTapThird,
                 navegationOption: 3,
                 selectedOption: widget.selectedOption,
               ),
